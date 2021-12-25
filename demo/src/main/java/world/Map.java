@@ -206,10 +206,12 @@ public class Map {
             creatures.get(i).set_inmagic();
     }
 
+    public void set_has_magic(){
+        has_magic = 1;
+    }
+
     // creature moving action includes the calabsh eating beans
     public synchronized void moveAction(int x, int y, int nx, int ny) {
-
-
 
         if (magic_log == 0 && has_magic == 1) {
             if (check_magic()) {

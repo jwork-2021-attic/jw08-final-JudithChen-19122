@@ -446,6 +446,8 @@ public class WorldScreen implements Screen {
             creatures.add(player);
         }
 
+        if(Integer.parseInt(stmp[6])<10) map.set_has_magic();
+
         map.init_creatures(creatures);
 
         state=2;
